@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -30,7 +31,7 @@ void exploreCSV(string fileName)
     int nColumns = sizeof(colsOfInterest) / sizeof(colsOfInterest[0]);
 
     fstream fin;
-    fin.open("./" + fileName, ios::in);
+    fin.open("./Covid19Casos10.csv" , ios::in);
 
     vector<string> row;
     string line, word;
